@@ -27,6 +27,7 @@ Unblock-File .\Invoke-PatchManagement.ps1
 
 ### 2. Ejecutar
 
+
 ```powershell
 # Prueba segura: NO instala nada (recomendada como primera ejecución)
 .\Invoke-PatchManagement.ps1 -SkipInstall
@@ -72,6 +73,11 @@ Unblock-File .\Invoke-PatchManagement.ps1
 ## Ubuntu Server 26.04 LTS
 
 ### 1. Preparar
+
+sudo apt install -y git
+
+# Clonar repositorio de scripts
+git clone https://github.com/panivinux/patch-management.git
 
 Copie el script al servidor (WinSCP o `scp`). Si el archivo viene de Windows, elimine los saltos de línea de Windows y dé permiso de ejecución:
 
